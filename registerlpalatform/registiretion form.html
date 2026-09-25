@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+ 
+    <form action='https://register-demo.freecodecamp.org' method='POST'>
+        <fieldset>
+            <label for="firstname">FirstName: 
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+            </label>
+
+            <label for="lastname">LastName:
+            <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+            </label>   
+
+            <label for="email">Email:
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </label>
+
+            <label for="password">Password:
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </label> 
+        </fieldset>
+        <fieldset>
+            <legend>Account Type (Required) </legend>
+            <label for="personal">
+                <input type="radio" id="personal" name="accountType" value="personal" class="inline" required>
+                Personal
+            </label>
+            <label for="business">
+                <input type="radio" id="business" name="accountType" value="business" class="inline" class="inline" required>
+                Business
+            </label>
+        </fieldset>
+         <fieldset>
+            <label for="profile-picture">upload profile picture  
+                <input type="file" id="profile-picture" name="profile-picture">
+            </label>
+            <label for="age">enter your age (years):
+                <input type="number" id="age" name="age" min="15" max="100">
+            </label>
+            <label for="refer">how did you hear about us? 
+              <select id="refer" name="refer">
+                <option value="friend">Friend</option>
+                <option value="social-media">Social Media</option>
+                <option value="advertisement">Advertisement</option>
+                <option value="other">Other</option>
+                
+            </label>
+            <label for="bio">provide Bio:
+                <textarea id="bio" name="bio" rows="4" cols="50" placeholder="I like coding on the beach..."></textarea>
+            </label>
+         </fieldset>
+          <a href="https://www.freecodecamp.org">Read our terms and conditions</a>
+    <label for="terms-and-conditions">
+      <input class="inline" name="terms" id="terms-and-conditions" type="checkbox" required />
+      I accept the terms and conditions
+    </label>
+    <input type="submit" value="Submit"/>
+    <button><a href="welcome.html">Back</a></button>
+    </form>
+    
+
+</body>
+</html>
